@@ -23,7 +23,7 @@ kube_api_anonymous_auth: true
 kube_version: v1.14.1
 
 # kubernetes image repo define
-kube_image_repo: "registry.cn-hangzhou.aliyuncs.com/google_containers"
+kube_image_repo: "gcr.mirrors.ustc.edu.cn/google-containers"
 
 # Where the binaries will be downloaded.
 # Note: ensure that you've enough disk space (about 1G)
@@ -212,6 +212,6 @@ persistent_volumes_enabled: false
 # nvidia_gpu_flavor: gtx
 ## NVIDIA driver installer images. Change them if you have trouble accessing gcr.io.
 # nvidia_driver_install_centos_container: atzedevries/nvidia-centos-driver-installer:2
-# nvidia_driver_install_ubuntu_container: registry.cn-hangzhou.aliyuncs.com/google_containers/ubuntu-nvidia-driver-installer@sha256:7df76a0f0a17294e86f691c81de6bbb7c04a1b4b3d4ea4e7e2cccdc42e1f6d63
+# nvidia_driver_install_ubuntu_container: gcr.mirrors.ustc.edu.cn/google-containers/ubuntu-nvidia-driver-installer@sha256:7df76a0f0a17294e86f691c81de6bbb7c04a1b4b3d4ea4e7e2cccdc42e1f6d63
 ## NVIDIA GPU device plugin image.
-# nvidia_gpu_device_plugin_container: "registry.cn-hangzhou.aliyuncs.com/google_containers/nvidia-gpu-device-plugin@sha256:0842734032018be107fa2490c98156992911e3e1f2a21e059ff0105b07dd8e9e"
+# nvidia_gpu_device_plugin_container: "gcr.mirrors.ustc.edu.cn/google-containers/nvidia-gpu-device-plugin@sha256:0842734032018be107fa2490c98156992911e3e1f2a21e059ff0105b07dd8e9e"
