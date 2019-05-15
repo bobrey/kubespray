@@ -1,7 +1,7 @@
 CephFS Volume Provisioner for Kubernetes 1.5+
 =============================================
 
-[![Docker Repository on Quay](https://quay.mirrors.ustc.edu.cn/repository/external_storage/cephfs-provisioner/status "Docker Repository on Quay")](https://quay.mirrors.ustc.edu.cn/repository/external_storage/cephfs-provisioner)
+[![Docker Repository on Quay](https://quay-mirror.qiniu.com/coreos/etcd/repository/external_storage/cephfs-provisioner/status "Docker Repository on Quay")](https://quay-mirror.qiniu.com/coreos/etcd/repository/external_storage/cephfs-provisioner)
 
 Using Ceph volume client
 

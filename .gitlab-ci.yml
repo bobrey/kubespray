@@ -38,7 +38,7 @@ before_script:
     - packet
   variables:
     KUBESPRAY_VERSION: v2.9.0
-  image: quay.mirrors.ustc.edu.cn/kubespray/kubespray:$KUBESPRAY_VERSION
+  image: quay-mirror.qiniu.com/coreos/etcd/kubespray/kubespray:$KUBESPRAY_VERSION
 
 .testcases: &testcases
   <<: *job

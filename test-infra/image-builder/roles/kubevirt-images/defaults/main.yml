@@ -2,8 +2,8 @@
 images_dir: /images/base
 
 docker_user: kubespray+buildvmimages
-docker_host: quay.mirrors.ustc.edu.cn
-registry: quay.mirrors.ustc.edu.cn/kubespray
+docker_host: quay-mirror.qiniu.com/coreos/etcd
+registry: quay-mirror.qiniu.com/coreos/etcd/kubespray
 
 images:
   ubuntu-1604:

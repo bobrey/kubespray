@@ -46,7 +46,7 @@ spec:
       volumes:
         - name: containervolume
           containerDisk:
-            image: quay.mirrors.ustc.edu.cn/kubespray/vm-{{ cloud_image }}
+            image: quay-mirror.qiniu.com/coreos/etcd/kubespray/vm-{{ cloud_image }}
         - name: cloudinitvolume
           cloudInitNoCloud:
             userDataBase64: {{ cloud_init[cloud_image] }}
