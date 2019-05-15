@@ -44,11 +44,11 @@
         - name: CephFS Provisioner | Build image
           shell: |
             cd ~/go/src/github.com/kubernetes-incubator/external-storage
-            REGISTRY=quay.mirrors.ustc.edu.cn/kubespray/ VERSION=06fddbe2 make ceph/cephfs
+            REGISTRY=quay-mirror.qiniu.com/kubespray/ VERSION=06fddbe2 make ceph/cephfs
 
         - name: CephFS Provisioner | Push image
           docker_image:
-            name: quay.mirrors.ustc.edu.cn/kubespray/cephfs-provisioner:06fddbe2
+            name: quay-mirror.qiniu.com/kubespray/cephfs-provisioner:06fddbe2
             push: yes
           retries: 10
 
