@@ -215,10 +215,10 @@ kube_router_image_repo: "dockerhub.azk8s.cn/cloudnativelabs/kube-router"
 kube_router_image_tag: "{{ kube_router_version }}"
 multus_image_repo: "dockerhub.azk8s.cn/nfvpe/multus"
 multus_image_tag: "{{ multus_version }}"
-nginx_image_repo: dockerhub.azk8s.cn/nginx
+nginx_image_repo: docker.io/nginx
 nginx_image_tag: 1.15
 
-haproxy_image_repo: dockerhub.azk8s.cn/haproxy
+haproxy_image_repo: docker.io/haproxy
 haproxy_image_tag: 1.9
 
 coredns_version: "1.5.0"
