@@ -40,7 +40,7 @@ kubeadm_version: "{{ kube_version }}"
 etcd_version: v3.2.26
 
 # kubernetes image repo define
-kube_image_repo: "gcr.mirrors.ustc.edu.cn/google-containers"
+kube_image_repo: "gcr.azk8s.cn/google-containers"
 
 # TODO(mattymo): Move calico versions to roles/network_plugins/calico/defaults
 # after migration to container download
@@ -226,11 +226,11 @@ coredns_image_repo: "docker.io/coredns/coredns"
 coredns_image_tag: "{{ coredns_version }}"
 
 nodelocaldns_version: "1.15.1"
-nodelocaldns_image_repo: "gcr.mirrors.ustc.edu.cn/google-containers/k8s-dns-node-cache"
+nodelocaldns_image_repo: "gcr.azk8s.cn/google-containers/k8s-dns-node-cache"
 nodelocaldns_image_tag: "{{ nodelocaldns_version }}"
 
 dnsautoscaler_version: 1.4.0
-dnsautoscaler_image_repo: "gcr.mirrors.ustc.edu.cn/google-containers/cluster-proportional-autoscaler-{{ image_arch }}"
+dnsautoscaler_image_repo: "gcr.azk8s.cn/google-containers/cluster-proportional-autoscaler-{{ image_arch }}"
 dnsautoscaler_image_tag: "{{ dnsautoscaler_version }}"
 test_image_repo: docker.io/busybox
 test_image_tag: latest
@@ -263,7 +263,7 @@ cert_manager_version: "v0.5.2"
 cert_manager_controller_image_repo: "quay-mirror.qiniu.com/jetstack/cert-manager-controller"
 cert_manager_controller_image_tag: "{{ cert_manager_version }}"
 addon_resizer_version: "1.8.3"
-addon_resizer_image_repo: "gcr.mirrors.ustc.edu.cn/google-containers/addon-resizer"
+addon_resizer_image_repo: "gcr.azk8s.cn/google-containers/addon-resizer"
 addon_resizer_image_tag: "{{ addon_resizer_version }}"
 
 dashboard_image_repo: "registry.cn-hangzhou.aliyuncs.com/google_containers/kubernetes-dashboard-{{ image_arch }}"
