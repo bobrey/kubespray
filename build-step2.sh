@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # 安装 centos 额外的yum源
 rpm -ivh https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
 

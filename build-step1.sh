@@ -20,5 +20,20 @@ yum --enablerepo=elrepo-kernel install -y kernel-lt kernel-lt-devel
 grub2-set-default 0
 
 
+
+#关闭防火墙。
+systemctl stop firewalld.service
+systemctl disable firewalld.service
+
+#关闭SELinux
+sed -i 's#SELINUX=enforcing#SELINUX=disabled#g' /etc/selinux/config
+setenforce 0
+
+
+#关闭swap
+swapoff -a
+sed -i 's/.*swap.*/#&/' /etc/fstab
+
+
 # 重启系统
 reboot
